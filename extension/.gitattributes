@@ -1,2 +1,2 @@
-*.json ident
-*.js ident
+*.json ident export-subst
+*.js ident export-subst
