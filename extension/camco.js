@@ -7,7 +7,8 @@
  */
 
 function mcOnClick(info, tab) {
-    code = info.selectionText;
+    code = trim(info.selectionText);
+	
     mc = parseMC(code);
     result = '';
 
