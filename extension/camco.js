@@ -4,7 +4,7 @@
  * @description A handy tool help you open monster code
  * @author      kmd (Kuo-Cheng Yeu)
  * @webpage     http://mikuru.tw
- * @revision	$Id$
+ * @revision	$Format:%ci$ ($Format:%h$)
  */
 
 function mcOnClick(info, tab) {
