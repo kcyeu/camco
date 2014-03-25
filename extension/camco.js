@@ -11,7 +11,10 @@ function mcOnClick(info, tab) {
     mc = parseMC(code);
     result = '';
 
-    if(mc == false) return;
+    if(mc == false) {
+        alert('Not a valid monster code.');
+		return;
+	}
 
     switch(info.menuItemId) {
     case web3Item:
@@ -29,14 +32,17 @@ function mcOnClick(info, tab) {
 function parseMC(code) {
     i = code.indexOf(":");
     if(i == -1) {
-        alert('Not a valid monster code.');
         return false;
     }
 
     id = parseInt(code.substring(0, i), 36);
     mpool = parseInt(code.substring(i + 1), 10);
+	if(isNaN(id) || isNaN(mpool)) {
+        return false;
+    }
+	
     result = {'id': id.toString(), 'mpool': mpool.toString()};
-    console.log('id: ' + result.id + ' mpool: ' + result.mpool);
+    //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
     return result;
 }
 

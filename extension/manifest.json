@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Castle Age Monster Code Openner",
-    "version": "0.1",
+    "version": "1.0",
     "description": "This extension convert monster code of CA to monster URL of web3 or facebook page, and open it for you",
     "background": {
         "scripts": [
