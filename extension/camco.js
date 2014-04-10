@@ -2,7 +2,7 @@
  * @name        Castle Age Monster Code Openner
  * @filename    camco.js
  * @description A handy tool help you open monster code
- * @author      kmd (Kuo-Cheng Yeu)
+ * @author      Gordon Yeu (Kuo-Cheng Yeu, aka kmd)
  * @webpage     http://mikuru.tw
  * @revision	$Format:%ci$ ($Format:%h$)
  */
