@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Castle Age Monster Code Opener",
     "short_name": "CAMCO",
-    "version": "0.0.0.5",
+    "version": "0.0.0.6",
     "description": "This extension convert monster code of CA to monster URL of web3 or facebook page, and open it for you",
     "background": {
         "scripts": [
