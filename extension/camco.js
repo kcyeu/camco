@@ -8,10 +8,10 @@
  */
 
 function mcOnClick(info, tab) {
-    code = info.selectionText.trim();
+    var code = info.selectionText.trim();
 	
-    mc = parseMC(code);
-    result = '';
+    var mc = parseMC(code);
+    var result = '';
 
     if(mc == false) {
         alert('Not a valid monster code.');
@@ -32,31 +32,19 @@ function mcOnClick(info, tab) {
 }
 
 function parseMC(code) {
-    i = code.indexOf(":");
+    var i = code.indexOf(":");
     if(i == -1) {
         return false;
     }
 
-    id = parseInt(code.substring(0, i), 36);
-    mpool = parseInt(code.substring(i + 1), 10);
+    var id = parseInt(code.substring(0, i), 36);
+    var mpool = parseInt(code.substring(i + 1), 10);
 	if(isNaN(id) || isNaN(mpool)) {
         return false;
     }
 	
-    result = {'id': id.toString(), 'mpool': mpool.toString()};
+    var result = {'id': id.toString(), 'mpool': mpool.toString()};
     //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
     return result;
 }
-
-// Create a menu item for web3 and fb
-var web3Item = chrome.contextMenus.create({
-    "title": "Open monster code in new web3 page",
-    "contexts": ["selection"],
-    "onclick": mcOnClick
-});
-var fbItem = chrome.contextMenus.create({
-    "title": "Open monster code in new fb page",
-    "contexts": ["selection"],
-    "onclick": mcOnClick
-});
 
