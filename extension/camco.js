@@ -9,26 +9,30 @@
 
 function mcOnClick(info, tab) {
     var code = info.selectionText.trim();
-	
+console.log(info);	
     var mc = parseMC(code);
     var result = '';
 
     if(mc == false) {
         alert('Not a valid monster code.');
-		return;
+		return false;
 	}
 
     switch(info.menuItemId) {
+    case 'web3Item':
     case web3Item:
         result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
         break
+    case 'fbItem':
     case fbItem:
         result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
         break
     default:
+        return false;
         break;
     }
     window.open(result);
+    return true;
 }
 
 function parseMC(code) {
@@ -43,7 +47,7 @@ function parseMC(code) {
         return false;
     }
 	
-    var result = {'id': id.toString(), 'mpool': mpool.toString()};
+    var result = {id: id.toString(), mpool: mpool.toString()};
     //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
     return result;
 }

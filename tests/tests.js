@@ -12,3 +12,13 @@ test( "Parse Monster Code Test", function() {
   ok( parseMC('zg3dzii49:') === false, "Non-mpool test" );
   ok( parseMC(':1') === false, "Non-id test" );
 });
+
+test( "Context Menu Event Test", function() {
+  web3Item = {selectionText: 'zg3dzii49:1', menuItemId: 'web3Item'};
+  fbItem = {selectionText: 'zg3dzii49:1', menuItemId: 'fbItem'};
+  var falseItem = {selectionText: '55667788', menuItemId: 'falseItem'};
+
+  ok( mcOnClick(web3Item) === true, "Web3 test" );
+  ok( mcOnClick(fbItem) === true, "FB test" );
+  ok( mcOnClick(falseItem) === false, "False case test" );
+});
