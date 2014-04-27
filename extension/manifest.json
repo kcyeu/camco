@@ -6,12 +6,6 @@
     "description": "This extension converts monster code of CA to monster URL of web3 or facebook page, and opens it for you.",
     "background": {
         "page": "background.html"
-/*
-        "scripts": [
-           "camco.js",
-           "contextMenu.js" 
-        ]
-*/
     },  
     "permissions": [
       "contextMenus",
