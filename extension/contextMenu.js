@@ -19,3 +19,14 @@ var fbItem = chrome.contextMenus.create({
     "onclick": mcOnClick
 });
 
+var web3CopyItem = chrome.contextMenus.create({
+    "title": "Convert and copy web3 URL to clipboard",
+    "contexts": ["selection"],
+    "onclick": mcOnClick
+});
+var fbCopyItem = chrome.contextMenus.create({
+    "title": "Convert and copy fb URL to clipboard",
+    "contexts": ["selection"],
+    "onclick": mcOnClick
+});
+

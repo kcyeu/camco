@@ -9,7 +9,7 @@
 
 function mcOnClick(info, tab) {
     var code = info.selectionText.trim();
-console.log(info);	
+    //console.log(info);
     var mc = parseMC(code);
     var result = '';
 
@@ -22,16 +22,27 @@ console.log(info);
     case 'web3Item':
     case web3Item:
         result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+        window.open(result);
         break
     case 'fbItem':
     case fbItem:
         result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+        window.open(result);
+        break
+    case 'web3CopyItem':
+    case web3CopyItem:
+        result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+        copyToClipboard(result);
+        break
+    case 'fbCopyItem':
+    case fbCopyItem:
+        result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+        copyToClipboard(result);
         break
     default:
         return false;
         break;
     }
-    window.open(result);
     return true;
 }
 
@@ -52,3 +63,10 @@ function parseMC(code) {
     return result;
 }
 
+function copyToClipboard(str) {
+    var tmpNode = document.getElementById("camco_tmp");
+    tmpNode.value = str;
+    tmpNode.focus();
+    tmpNode.select();
+    document.execCommand("Copy", false, null);
+}
