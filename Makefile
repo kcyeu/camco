@@ -7,5 +7,8 @@ commit:
 	git add .
 	git commit
 
-all: clean commit
+zip:
 	zip ${TARGET} extension/* 
+
+all: clean commit zip
+
