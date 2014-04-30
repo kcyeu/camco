@@ -1,0 +1,22 @@
+{
+    "invalidMonsterCodeMsg": {
+        "message": "Not a valid monster code.",
+        "description": "This message will be displayed in an alert."
+    },
+    "openMCinFbMsg": {
+        "message": "Open monster code in new fb page",
+        "description": "Context menu message."
+    },
+    "openMCinWeb3Msg": {
+        "message": "Open monster code in new web3 page",
+        "description": "Context menu message."
+    },
+    "copyMCtoWeb3URLMsg": {
+        "message": "Convert and copy web3 URL to clipboard",
+        "description": "Context menu message."
+    },
+    "copyMCtoFbURLMsg": {
+        "message": "Convert and copy fb URL to clipboard",
+        "description": "Context menu message."
+    }
+}

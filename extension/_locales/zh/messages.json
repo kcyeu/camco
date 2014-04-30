@@ -1,0 +1,22 @@
+{
+    "invalidMonsterCodeMsg": {
+        "message": "無效的 monster code",
+        "description": "This message will be displayed in an alert."
+    },
+    "openMCinFbMsg": {
+        "message": "在 fb 新頁面開啟 monster code",
+        "description": "Context menu message."
+    },
+    "openMCinWeb3Msg": {
+        "message": "在 web3 新頁面開啟 monster code",
+        "description": "Context menu message."
+    },
+    "copyMCtoWeb3URLMsg": {
+        "message": "轉換並複製 web3 網址至剪貼簿",
+        "description": "Context menu message."
+    },
+    "copyMCtoFbURLMsg": {
+        "message": "轉換並複製 fb 網址至剪貼簿",
+        "description": "Context menu message."
+    }
+}

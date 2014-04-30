@@ -14,7 +14,7 @@ function mcOnClick(info, tab) {
     var result = '';
 
     if(mc == false) {
-        alert('Not a valid monster code.');
+        alert(chrome.i18n.getMessage("invalidMonsterCodeMsg"));
 		return false;
 	}
 
@@ -68,5 +68,5 @@ function copyToClipboard(str) {
     tmpNode.value = str;
     tmpNode.focus();
     tmpNode.select();
-    document.execCommand("Copy", false, null);
+    document.execCommand("Copy", false, null);
 }
