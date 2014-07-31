@@ -8,25 +8,24 @@
  */
 
 // Create a menu item for web3 and fb
-var web3Item = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("openMCinWeb3Msg"),
+var web3ItemB = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("openMCinWeb3MsgB"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });
-var fbItem = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("openMCinFbMsg"),
+var fbItemB = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("openMCinFbMsgB"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });
 
-var web3CopyItem = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("copyMCtoWeb3URLMsg"),
+var web3CopyItemB = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("copyMCtoWeb3URLMsgB"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });
-var fbCopyItem = chrome.contextMenus.create({
-    //"title": "Convert and copy fb URL to clipboard",
-    "title": chrome.i18n.getMessage("copyMCtoFbURLMsg"),
+var fbCopyItemB = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("copyMCtoFbURLMsgB"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });

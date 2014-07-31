@@ -8,42 +8,51 @@
  */
 
 function mcOnClick(info, tab) {
-    var code = info.selectionText.trim();
-    //console.log(info);
-    var mc = parseMC(code);
-    var result = '';
+  var str = info.selectionText.trim();
+  //console.log(info);
+  var codeArr = filterMC(str);
+  if (codeArr == false) {
+    alert(chrome.i18n.getMessage("monsterCodeNotFoundMsg"));
+  	return false;
+  }
+
+  var result = '';
+console.log(codeArr);
+  for (var key in codeArr) {
+    var mc = parseMC(codeArr[key]);
 
     if(mc == false) {
-        alert(chrome.i18n.getMessage("invalidMonsterCodeMsg"));
-		return false;
-	}
+      console.log(chrome.i18n.getMessage("invalidMonsterCodeMsg"));
+      continue;
+    }
 
     switch(info.menuItemId) {
-    case 'web3Item':
-    case web3Item:
-        result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+      case 'web3ItemB':
+      case web3ItemB:
+        result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
         window.open(result);
         break
-    case 'fbItem':
-    case fbItem:
-        result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+      case 'fbItemB':
+      case fbItemB:
+        result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
         window.open(result);
         break
-    case 'web3CopyItem':
-    case web3CopyItem:
-        result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+      case 'web3CopyItemB':
+      case web3CopyItemB:
+        result += "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
         copyToClipboard(result);
         break
-    case 'fbCopyItem':
-    case fbCopyItem:
-        result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool="+mc.mpool+"&casuser="+mc.id;
+      case 'fbCopyItemB':
+      case fbCopyItemB:
+        result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
         copyToClipboard(result);
         break
-    default:
-        return false;
+      default:
+        console.log("Not a valid option");
         break;
     }
-    return true;
+  }
+  return true;
 }
 
 function parseMC(code) {
@@ -61,6 +70,22 @@ function parseMC(code) {
     var result = {id: id.toString(), mpool: mpool.toString()};
     //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
     return result;
+}
+
+function filterMC(str) {
+  var result = new Array();
+  var patt = /\b([0-9]|[a-z]|[A-Z])+:(1|2|3|101)\b/g;
+  var tmp;
+
+  while ((tmp = patt.exec(str)) != null) {
+    result.push(tmp[0]);
+  }
+
+  if (result.length == 0) {
+    return false;
+  } else {
+    return result;
+  }
 }
 
 function copyToClipboard(str) {
