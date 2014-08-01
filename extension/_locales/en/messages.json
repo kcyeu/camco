@@ -8,11 +8,11 @@
         "description": "This message will be displayed in an alert."
     },
     "openMCinFbMsgB": {
-        "message": "Open monster codes in new fb page",
+        "message": "Open monster codes in new fb pages",
         "description": "Context menu message."
     },
     "openMCinWeb3MsgB": {
-        "message": "Open monster codes in new web3 page",
+        "message": "Open monster codes in new web3 pages",
         "description": "Context menu message."
     },
     "copyMCtoWeb3URLMsgB": {
