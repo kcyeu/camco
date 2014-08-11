@@ -6,9 +6,9 @@ Castle Age Monster Code Opener, "CAMCO" is a Chrome Extention, which allows user
 Feature:
 --------
 
-1. Support CA on both Facebook and web3.
-2. Convert monster codes to URLs, then open them in new pages.
-3. Convert monster codes to URLs, then copy them to clipboard.
+1. Supports CA on both Facebook and web3.
+2. Converts monster codes to URLs, then open them in new pages.
+3. Converts monster codes to URLs, then copy them to clipboard.
 4. New version supports BATCH processing!
 
 Usage:

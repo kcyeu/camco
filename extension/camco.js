@@ -37,13 +37,9 @@ console.log(codeArr);
         result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
         window.open(result);
         break
-      case 'web3CopyItemB':
-      case web3CopyItemB:
+      case 'copyItem':
+      case copyItem:
         result += "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
-        copyToClipboard(result);
-        break
-      case 'fbCopyItemB':
-      case fbCopyItemB:
         result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
         copyToClipboard(result);
         break
@@ -95,3 +91,4 @@ function copyToClipboard(str) {
     tmpNode.select();
     document.execCommand("Copy", false, null);
 }
+

@@ -19,13 +19,8 @@ var fbItemB = chrome.contextMenus.create({
     "onclick": mcOnClick
 });
 
-var web3CopyItemB = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("copyMCtoWeb3URLMsgB"),
-    "contexts": ["selection"],
-    "onclick": mcOnClick
-});
-var fbCopyItemB = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("copyMCtoFbURLMsgB"),
+var copyItem = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("copyMCtoURLMsg"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });

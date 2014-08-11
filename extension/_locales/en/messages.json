@@ -15,12 +15,8 @@
         "message": "Open monster codes in new web3 pages",
         "description": "Context menu message."
     },
-    "copyMCtoWeb3URLMsgB": {
-        "message": "Convert and copy web3 URLs to clipboard",
-        "description": "Context menu message."
-    },
-    "copyMCtoFbURLMsgB": {
-        "message": "Convert and copy fb URLs to clipboard",
+    "copyMCtoURLMsg": {
+        "message": "Convert and copy URLs to clipboard",
         "description": "Context menu message."
     }
 }
