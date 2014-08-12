@@ -1,0 +1,11 @@
+{
+  "name": "camco",
+  "title": "Castle Age Monster Code Opener",
+  "id": "camco@mikuru.tw",
+  "description": "This extension converts monster codes of CA to monster URLs of web3 or facebook pages, and opens them for you.",
+  "author": "Gordon Yeu",
+  "license": "MPL 2.0",
+  "version": "1.0.0.0",
+  "icon":   "data/icon-48.png",
+  "icon64": "data/icon-64.png"
+}

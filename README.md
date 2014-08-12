@@ -18,3 +18,8 @@ Usage:
 2. Right click the selection.
 3. Castle Age Monster Code Opener > copy or open monster codes.
 
+Binary:
+-------
+1. [Chrome extension](https://chrome.google.com/webstore/detail/castle-age-monster-code-o/abgckmhddlbhlhbhpcnfgmmdgfkbcofb)
+2. [Firefox addon](https://addons.mozilla.org/firefox/addon/castle-age-monster-code-opener/)
+
