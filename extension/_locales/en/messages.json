@@ -7,11 +7,11 @@
         "message": "Monster code not found.",
         "description": "This message will be displayed in an alert."
     },
-    "openMCinFbMsgB": {
+    "openMCinFbMsg": {
         "message": "Open monster codes in new fb pages",
         "description": "Context menu message."
     },
-    "openMCinWeb3MsgB": {
+    "openMCinWeb3Msg": {
         "message": "Open monster codes in new web3 pages",
         "description": "Context menu message."
     },

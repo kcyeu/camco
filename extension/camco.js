@@ -9,7 +9,6 @@
 
 function mcOnClick(info, tab) {
   var str = info.selectionText.trim();
-  //console.log(info);
   var codeArr = filterMC(str);
   if (codeArr == false) {
     alert(chrome.i18n.getMessage("monsterCodeNotFoundMsg"));
@@ -17,7 +16,6 @@ function mcOnClick(info, tab) {
   }
 
   var result = '';
-console.log(codeArr);
   for (var key in codeArr) {
     var mc = parseMC(codeArr[key]);
 
@@ -27,20 +25,20 @@ console.log(codeArr);
     }
 
     switch(info.menuItemId) {
-      case 'web3ItemB':
-      case web3ItemB:
+      case 'web3Item':
+      case web3Item:
         result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
         window.open(result);
         break
-      case 'fbItemB':
-      case fbItemB:
+      case 'fbItem':
+      case fbItem:
         result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
         window.open(result);
         break
       case 'copyItem':
       case copyItem:
         result += "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
-        result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
+        result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n\r\n";
         copyToClipboard(result);
         break
       default:
@@ -52,20 +50,20 @@ console.log(codeArr);
 }
 
 function parseMC(code) {
-    var i = code.indexOf(":");
-    if(i == -1) {
-        return false;
-    }
+  var i = code.indexOf(":");
+  if(i == -1) {
+    return false;
+  }
 
-    var id = parseInt(code.substring(0, i), 36);
-    var mpool = parseInt(code.substring(i + 1), 10);
-	if(isNaN(id) || isNaN(mpool)) {
-        return false;
-    }
-	
-    var result = {id: id.toString(), mpool: mpool.toString()};
-    //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
-    return result;
+  var id = parseInt(code.substring(0, i), 36);
+  var mpool = parseInt(code.substring(i + 1), 10);
+  if(isNaN(id) || isNaN(mpool)) {
+    return false;
+  }
+  
+  var result = {id: id.toString(), mpool: mpool.toString()};
+  //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
+  return result;
 }
 
 function filterMC(str) {
@@ -85,10 +83,10 @@ function filterMC(str) {
 }
 
 function copyToClipboard(str) {
-    var tmpNode = document.getElementById("camco_tmp");
-    tmpNode.value = str;
-    tmpNode.focus();
-    tmpNode.select();
-    document.execCommand("Copy", false, null);
+  var tmpNode = document.getElementById("camco_tmp");
+  tmpNode.value = str;
+  tmpNode.focus();
+  tmpNode.select();
+  document.execCommand("Copy", false, null);
 }
 

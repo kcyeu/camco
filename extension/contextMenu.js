@@ -8,13 +8,13 @@
  */
 
 // Create a menu item for web3 and fb
-var web3ItemB = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("openMCinWeb3MsgB"),
+var web3Item = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("openMCinWeb3Msg"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });
-var fbItemB = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage("openMCinFbMsgB"),
+var fbItem = chrome.contextMenus.create({
+    "title": chrome.i18n.getMessage("openMCinFbMsg"),
     "contexts": ["selection"],
     "onclick": mcOnClick
 });
