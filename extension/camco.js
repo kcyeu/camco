@@ -37,8 +37,9 @@ function mcOnClick(info, tab) {
         break
       case 'copyItem':
       case copyItem:
-        result += "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n";
-        result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + " \r\n\r\n";
+        result += "Monster code - " + mc.mc + "\r\n";
+        result += "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + "\r\n";
+        result += "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id + "\r\n\r\n";
         copyToClipboard(result);
         break
       default:
@@ -50,6 +51,7 @@ function mcOnClick(info, tab) {
 }
 
 function parseMC(code) {
+  code = code.trim();
   var i = code.indexOf(":");
   if(i == -1) {
     return false;
@@ -61,7 +63,7 @@ function parseMC(code) {
     return false;
   }
   
-  var result = {id: id.toString(), mpool: mpool.toString()};
+  var result = {id: id.toString(), mpool: mpool.toString(), mc: code.toString()};
   //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
   return result;
 }
