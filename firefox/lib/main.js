@@ -13,10 +13,12 @@ var data = require("sdk/self").data;
 var cm = require("sdk/context-menu");
 var _ = require("sdk/l10n").get;
 
+var cs = 'self.on("click", function () { self.postMessage(window.getSelection().toString());});';
+   
 var miMC2fb = cm.Item({
   label: _("openMCinFbMsg"),
   context: cm.SelectionContext(),
-  contentScript: 'self.on("click", function () { self.postMessage(window.getSelection().toString());});',
+  contentScript: cs,
   onMessage: function (selectionText) {
     processSelection(selectionText, 'fbItem');
   }
@@ -25,7 +27,7 @@ var miMC2fb = cm.Item({
 var miMC2web3 = cm.Item({
   label: _("openMCinWeb3Msg"),
   context: cm.SelectionContext(),
-  contentScript: 'self.on("click", function () { self.postMessage(window.getSelection().toString());});',
+  contentScript: cs,
   onMessage: function (selectionText) {
     processSelection(selectionText, 'web3Item');
   }
@@ -34,7 +36,7 @@ var miMC2web3 = cm.Item({
 var miMCCopy = cm.Item({
   label: _("copyMCtoURLMsg"),
   context: cm.SelectionContext(),
-  contentScript: 'self.on("click", function () { self.postMessage(window.getSelection().toString());});',
+  contentScript: cs,
   onMessage: function (selectionText) {
     processSelection(selectionText, 'copyItem');
   }
