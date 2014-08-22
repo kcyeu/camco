@@ -1,7 +1,7 @@
 Castle Age Monster Code Opener
 ==============================
 
-Castle Age Monster Code Opener, "CAMCO" is a browser extention for both Google Chrome and Mozilla Firefox, which allows user to convert monster codes and open them in Facebook or web3 easily.
+Castle Age Monster Code Opener, "CAMCO" is a browser extention for both [Google Chrome](https://chrome.google.com) and [Mozilla Firefox](https://www.mozilla.com/firefox/), which allows user to convert monster codes and open them in Facebook or web3 easily.
 
 What's new:
 ----------
