@@ -1,4 +1,4 @@
-TARGET=camco.zip
+TARGET=`basename ${PWD}`.zip
 
 clean:
 	rm -f ${TARGET}

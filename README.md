@@ -26,6 +26,8 @@ Usage
 Install
 --------
 Pre-built binaries are available:
-1. [Chrome extension](https://chrome.google.com/webstore/detail/castle-age-monster-code-o/abgckmhddlbhlhbhpcnfgmmdgfkbcofb)
-2. [Firefox addon](https://addons.mozilla.org/firefox/addon/castle-age-monster-code-opener/)
+
+ 1. [Chrome extension](https://chrome.google.com/webstore/detail/castle-age-monster-code-o/abgckmhddlbhlhbhpcnfgmmdgfkbcofb)
+ 2. [Firefox addon](https://addons.mozilla.org/firefox/addon/castle-age-monster-code-opener/)
+
 
