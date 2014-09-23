@@ -32,10 +32,12 @@ Usage
 
 Promo Video
 ------------
+
 [![CAMCO PV](http://img.youtube.com/vi/kAHyxdE4i0g/maxresdefault.jpg)](http://www.youtube.com/watch?v=kAHyxdE4i0g)
 
 History
 --------
+
 | Date       | Event   |
 |------------|---------|
 | 2014-09-23 |Promotional Video release |
