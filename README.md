@@ -30,5 +30,17 @@ Usage
 2. Right click the selection.
 3. Castle Age Monster Code Opener > copy or open monster codes.
 
+Promo Video
+------------
+[![CAMCO PV](http://img.youtube.com/vi/kAHyxdE4i0g/0.jpg)](http://www.youtube.com/watch?v=kAHyxdE4i0g)
 
+History
+--------
+| Date       | Event   |
+|------------|---------|
+| 2014-09-23 |Promotional Video release |
+| 2014-09-08 |Firefox add-on fully reviewed, version 1.0.1.0 |
+| 2014-08-12 |Firefox add-on debut, version 1.0.0.0 |
+| 2014-04-09 |Chrome extension debut |
+| 2014-03-25 |Developmentment kickstart |
 
