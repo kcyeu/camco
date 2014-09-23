@@ -34,6 +34,8 @@ Promo Video
 ------------
 [![CAMCO PV](http://img.youtube.com/vi/kAHyxdE4i0g/0.jpg)](http://www.youtube.com/watch?v=kAHyxdE4i0g)
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/kAHyxdE4i0g" frameborder="0" allowfullscreen></iframe>
+
 History
 --------
 | Date       | Event   |
