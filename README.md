@@ -41,6 +41,7 @@ History
 
 | Date       | Event   |
 |------------|---------|
+| 2014-09-27 |Added support for incognito mode and private browsing (Chrome: 1.4.0.0, Firefox: 1.1.0.0) |
 | 2014-09-23 |Promotional Video release |
 | 2014-09-08 |Firefox add-on fully reviewed, version 1.0.1.0 |
 | 2014-08-12 |Firefox add-on debut, version 1.0.0.0 |
