@@ -14,6 +14,7 @@ What's new
 ----------
 
 1. Added support for "Private Browsing" in Mozilla Firefox.
+2. Added support for "Incognito Mode" in Google Chrome
 
 Features
 ---------

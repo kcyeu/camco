@@ -81,12 +81,12 @@ function mcOnClick(info, tab) {
     case 'web3Item':
     case web3Item:
       result = "https://web3.castleagegame.com/castle_ws/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
-      window.open(result);
+      chrome.tabs.create({"url": result});
       break;
     case 'fbItem':
     case fbItem:
       result = "https://apps.facebook.com/castle_age/battle_monster.php?mpool=" + mc.mpool + "&casuser=" + mc.id;
-      window.open(result);
+      chrome.tabs.create({"url": result});
       break;
     case 'copyItem':
     case copyItem:
