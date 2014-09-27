@@ -13,7 +13,7 @@ Pre-built binaries are available:
 What's new
 ----------
 
-1. Better clipboard content representation.
+1. Added support for "Private Browsing" in Mozilla Firefox.
 
 Features
 ---------
