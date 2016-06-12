@@ -22,6 +22,7 @@ function parseMC(code) {
 
   var id = parseInt(code.substring(0, i), 36);
   var mpool = parseInt(code.substring(i + 1), 10);
+  console.log('id: ' + id + ', mpool: ' + mpool);
   if (isNaN(id) || isNaN(mpool)) {
     return false;
   }
@@ -31,13 +32,13 @@ function parseMC(code) {
     mpool: mpool.toString(),
     mc: code.toString()
   };
-  //console.log('id: ' + result.id + ', mpool: ' + result.mpool);
+  console.log('id: ' + result.id + ', mpool: ' + result.mpool);
   return result;
 }
 
 function filterMC(str) {
   var result = [];
-  var patt = /\b([0-9]|[a-z]|[A-Z])+:(1|2|3|101)\b/g;
+  var patt = /\b([0-9]|[a-z]|[A-Z])+:(1|2|3|100|101)\b/g;
   var tmp;
 
   while ((tmp = patt.exec(str)) !== null) {

@@ -27,7 +27,7 @@ function parseMC(code) {
   if (i === -1) {
     return false;
   }
-
+  
   var id = parseInt(code.substring(0, i), 36);
   var mpool = parseInt(code.substring(i + 1), 10);
   if (isNaN(id) || isNaN(mpool)) {
@@ -41,7 +41,7 @@ function parseMC(code) {
 
 function filterMC(str) {
   var result = [];
-  var patt = /\b([0-9]|[a-z]|[A-Z])+:(1|2|3|101)\b/g;
+  var patt = /\b([0-9]|[a-z]|[A-Z])+:(1|2|3|100|101)\b/g;
   var tmp;
 
   while ((tmp = patt.exec(str)) !== null) {
