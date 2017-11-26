@@ -3,8 +3,8 @@ Castle Age Monster Code Opener
 
 |         | Miniml | Tested |
 |---------|---------|--------|
-| FireFox | ![FireFox 26](https://img.shields.io/badge/firefox-26-brightgreen.svg) | ![FireFox 40](https://img.shields.io/badge/firefox-40-brightgreen.svg) |
-| Chrome | ![Chrome 33](https://img.shields.io/badge/chrome-33-brightgreen.svg) | ![Chrome 44](https://img.shields.io/badge/chrome-44-brightgreen.svg) |
+| FireFox | ![FireFox 26](https://img.shields.io/badge/firefox-26-brightgreen.svg) | ![FireFox 56](https://img.shields.io/badge/firefox-56-brightgreen.svg) |
+| Chrome | ![Chrome 33](https://img.shields.io/badge/chrome-33-brightgreen.svg) | ![Chrome 62](https://img.shields.io/badge/chrome-62-brightgreen.svg) |
 
 
 Castle Age Monster Code Opener, "CAMCO" is a browser extention for both [Google Chrome](https://chrome.google.com) and [Mozilla Firefox](https://www.mozilla.com/firefox/), which allows user to convert monster codes and open them in Facebook or web3 easily.
@@ -47,6 +47,7 @@ History
 
 | Date       | Event   |
 |------------|---------|
+| 2017-11-26 |Prepared migration for Firefox Quantum (57) |
 | 2014-09-27 |Added support for incognito mode and private browsing<br>(Chrome: 1.4.0.0, Firefox: 1.1.0.0) |
 | 2014-09-23 |Promotional Video release |
 | 2014-09-08 |Firefox add-on fully reviewed, version 1.0.1.0 |
